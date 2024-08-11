@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveSmart</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="font-sans leading-normal tracking-normal">
+    <div class="relative">
+        <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="flex flex-col items-center justify-center bg-purple-50 pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl justify-center font-bold mb-8">AI Project: DriveSmart</h1>
+            <div class="flex justify-center">
+                <img src="assets/images/drivesmart.JPG" alt="Drive smart" class="rounded-full shadow-lg" style="width: 300px; height: 300px;">
+            </div>
+            <div class="mt-8 text-xl leading-relaxed max-w-prose text-center mx-auto bg-white p-8 rounded shadow-lg">
+                <p>
+                   This was a group project at university where our AI solution aims to improve road safety by monitoring accident-prone areas and providing real-time alerts through a color-coded route system. Integrating GPS with historical data analysis, our system guides drivers safely, enhancing traffic flow. The report outlines the implementation, potential models, and ethical considerations of our AI solution. We aim to reduce accidents and promote sustainable development by refining the system based on user feedback and insights from a prototype.
+                </p>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="bg-purple-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Prototype Development</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Frontend Development Skill -->
+                <div class="bg-white rounded shadow-lg flex flex-col items-center p-4">
+                    <img src="assets/images/data collection.png" alt="Frontend Development" class="icon mb-4">
+                    <h3 class="text-xl font-semibold">Data Collection</h3>
+                    <p>
+                        <span class="highlight">Online Databases:</span> We integrated GPS technology to provide location-based services and real-time navigation features, enhancing user experience by offering accurate and timely information.
+                        <br><br>
+                        <span class="highlight">APIs:</span> We explored APIs provided by transportation authorities or government agencies. These APIs offer access to real-time or historical accident data, streamlining data retrieval and providing structured datasets.
+                        <br><br>
+                        <span class="highlight">Data Scraping:</span> We developed web scraping scripts to extract relevant data from online sources, adhering to legal and ethical guidelines. Data scraping allows for custom data extraction tailored to specific requirements.
+                        <br><br>
+                        <span class="highlight">Surveys:</span> We conducted surveys and questionnaires to gather additional information, particularly concerning road conditions, weather, and witness accounts for specific incidents. Surveys provide context-rich data for in-depth analysis.
+                    </p>
+                </div>
+            
+                <!-- Backend Development Skill -->
+                <div class="bg-white rounded shadow-lg flex flex-col items-center p-4">
+                    <img src="assets/images/tech integration.png" alt="Frontend Development" class="icon mb-4">
+                    <h3 class="text-xl font-semibold">Technology Integration</h3>
+                    <p>
+                        <span class="highlight">GPS Integration:</span> We utilized online databases from government websites and transportation departments, which often publish detailed accident reports, ensuring data reliability.
+                        <br><br>
+                        <span class="highlight">NLP:</span> We developed a chatbot using NLP techniques to allow users to report accidents and hazards through natural language inputs. This facilitates easier and quicker reporting and improves data collection accuracy.
+                        <br><br>
+                        <span class="highlight">APIs:</span> We Combined Open Maps API with TomTom Traffic API to deliver comprehensive traffic and navigation data, enhancing the app’s capability to provide accurate real-time information.
+                        <br><br>
+                        <span class="highlight">Machine learning:</span> We utilized TensorFlow, PyTorch, and Scikit-learn to build predictive models. Techniques such as logistic regression, random forest, and SVM were employed to analyze historical accident data and predict accident hotspots.
+                    </p>
+                </div>
+            
+                <!-- PM Skill -->
+                <div class="bg-white rounded shadow-lg flex flex-col items-center p-4">
+                    <img src="assets/images/prototype.png" alt="PM" class="icon mb-4">
+                    <h3 class="text-xl font-semibold">UX/UI</h3>
+                    <p>Designed an intuitive and user-friendly interface featuring interactive maps, color-coded routes, and clear visual indicators for accident alerts and navigation suggestions using Pronto IO. This ensures users can easily interpret and interact with the app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer class="text-center py-4 bg-purple-900 text-white mt-8">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
+</body>
+</html>

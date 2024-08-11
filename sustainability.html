@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability in Higher Education</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            background-image: url('assets/images/purple.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-grid > div {
+            flex: 1 0 calc(100% - 20px); 
+            max-width: calc(100% - 20px);
+        }
+        @media (min-width: 640px) { 
+            .image-grid > div {
+                flex: 1 0 calc(50% - 20px); 
+                max-width: calc(50% - 20px);
+            }
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 5px solid white; /* Add this line for the white border */
+        }
+        
+    </style>
+</head>
+<body class="font-sans leading-normal tracking-normal">
+    <div class="relative">
+        <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="flex flex-col items-center justify-center bg-purple-50 pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-3xl font-bold mb-8">Sustainability in Higher Education</h1>
+            <div class="flex justify-center">
+                <img src="assets/images/EV.jpg" alt="Tinaika Pereira" class="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64">
+            </div>
+            <div class="mt-8 text-lg md:text-xl leading-relaxed max-w-prose text-center mx-auto bg-white p-8 rounded shadow-lg">
+                <p>
+                    Australian universities are committed to sustainability, reflecting their dedication to environmental and societal well-being. Climate change presents a significant challenge, necessitating increased awareness of critical issues. La Trobe University's Future Ready Strategy incorporates sustainable practices such as recycling, composting, and energy efficiency to reduce its ecological footprint. The university aims for carbon neutrality by 2029, with regional campuses targeting 2022 through the Net Zero program, which emphasizes energy efficiency and community benefits. Through the La Trobe Energy Analytics Platform (LEAP), the university collaborates to lower energy consumption. Therefore, we took a look at two types of datasets, primary and secondary
+                </p>
+                <p>
+                    <span class="highlight font-semibold">Primary Dataset:</span>
+                    It consists of collaboration among students, faculty, staff, and partners that may fall short in generating new solutions to sustainability issues. Supplier engagement and commitment to sustainable practices can also vary, complicating efforts to drive change.
+                </p>
+                <p>
+                    <span class="highlight font-semibold">Secondary Dataset:</span>
+                    It consists of public opinion on climate change on social media platforms like Twitter, which can be challenging due to the rapid changes driven by external events or viral content. The vast volume of climate change discussions can lead to information overload, making it hard to identify relevant strategies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Modal Evaluation for Primary Dataset</h2>
+            <div class="bg-white p-8 rounded shadow-lg text-center">
+                <p class="text-lg md:text-xl leading-relaxed">
+                    After analyzing the datasets for student accommodation, building type, and teaching building, we have uncovered the following insights.
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed mt-4">
+                    For the datasets, we divided it into 70% training data and 30% testing data. Furthermore, we employed three models for prediction. They are linear regression, neural network, and gradient boosting regression.
+                </p>
+                <div class="image-grid mt-8">
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Evaluation for Accommodation Building</h3>
+                        <img src="assets/images/evaluation1.JPG" alt="Evaluation for Accommodation Building">
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Evaluation for Building Type</h3>
+                        <img src="assets/images/bldg2.JPG" alt="Evaluation for Building Type">
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Evaluation for Teaching Building</h3>
+                        <img src="assets/images/bldg3.JPG" alt="Evaluation for Teaching Building">
+                    </div>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed mt-4">
+                    Hence, upon a comparison of the RMSE values for all three datasets, it is evident that building_type_accommodation excels, exhibiting the lowest RMSE values in comparison to the other datasets. Moreover, the model most suitable is gradient boosting regression.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section-bg py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Modal Evaluation for secondary Dataset</h2>
+            <div class="bg-white p-8 rounded shadow-lg text-center">
+                <p class="text-lg md:text-xl leading-relaxed">
+                    The secondary dataset consisted of tweets from Twitter. Hence, we used natural language processing techniques to identify keywords.  </p>
+                <p class="text-lg md:text-xl leading-relaxed mt-4">
+                    We used various libraries like pandas, numpy, matplotlib, seaborn, textblob, sklearn.feature_extraction.text, and much more.
+                </p>
+                <div class="image-grid mt-8">
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Top 10 words</h3>
+                        <img src="assets/images/topwords.JPG" alt="top 10 words">
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">N grams</h3>
+                        <img src="assets/images/bigrams.JPG" alt="N grams">
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Sentiment analysis</h3>
+                        <img src="assets/images/sentiment.JPG" alt="sentiment analysis">
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Word cloud</h3>
+                        <img src="assets/images/bldg3.JPG" alt="word cloud">
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Topic analyzer</h3>
+                        <img src="assets/images/topicana.JPG" alt="topic analyzer">
+                    </div>
+                </div>
+                <p class="text-lg md:text-xl leading-relaxed mt-4">
+                    Hence, upon a comparison of the RMSE values for all three datasets, it is evident that building_type_accommodation excels, exhibiting the lowest RMSE values in comparison to the other datasets. Moreover, the model most suitable is gradient boosting regression.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <footer class="text-center py-4 bg-purple-900 text-white">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
+</body>
+</html>

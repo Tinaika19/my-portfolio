@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profiling and Segmentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="font-sans leading-normal tracking-normal">
+    <div class="relative">
+        <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    </header>
+
+    <section class="flex flex-col items-center justify-center bg-purple-50 pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-2xl md:text-3xl font-bold mb-8">Customer Profiling and Segmentation</h1>
+            <div class="flex justify-center">
+                <img src="assets/images/data.jpg" alt="Data Visualization" class="shadow-lg"
+                    style="width: 100%; max-width: 300px; height: auto;">
+            </div>
+            <div
+                class="mt-8 text-lg md:text-xl leading-relaxed max-w-prose text-center mx-auto bg-white p-8 rounded shadow-lg">
+                <p>
+                    In this project, I utilized customer analytics skills to perform segmentation and profiling on a
+                    consumer credit card portfolio dataset. The dataset contained detailed demographic and behavioral
+                    information, including age, gender, marital status, income category, card type, balance, credit
+                    limit, spending habits, and a Naive Bayes classifier attrition flag for predicting potential
+                    customer attrition.
+
+                    The goal was to enhance business value propositions by identifying customer groups with similar
+                    characteristics, enabling more effective communication and engagement strategies. Using SAS Miner, I
+                    employed techniques such as variable transformation, filtering, clustering, and segmentation. The
+                    analysis revealed a predominance of female customers across segments and identified Segment 5 as the
+                    most prominent, constituting 28% of the total customer base. This project demonstrated the
+                    effectiveness of data-driven insights in predicting customer behavior and optimizing engagement
+                    strategies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Existing Customers</h2>
+            <div class="bg-white p-8 rounded shadow-lg text-center">
+                <p class="text-lg md:text-xl leading-relaxed">
+                    We used the filter node to focus on existing customers and found that segments 6, 2, and 4 were
+                    significant. Key variables identified were gender and age for segment 6, marital status and gender
+                    for segment 2, and age and gender for segment 4. Females were the predominant gender across
+                    segments, with married individuals being more common in segment 2. Segment 5 showed that female
+                    gender was less influential. Overall, the analysis highlighted females as a dominant demographic
+                    among existing customers and emphasized the significance of marital status within segment 2.
+                </p>
+                <div class="flex justify-center mt-8">
+                    <img src="assets/images/existing_customer.JPG" alt="Existing Customers"
+                        class="w-full max-w-md h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Attrited Customers</h2>
+            <div class="bg-white p-8 rounded shadow-lg text-center">
+                <p class="text-lg md:text-xl leading-relaxed">
+                    In the analysis of attrited customers, segment 5 had the highest count with 278 instances, all
+                    female, while segment 2 had the lowest count with 37 instances and unknown marital status. For both
+                    segments 5 and 1, key variables were gender and age. Existing customers had a higher count compared
+                    to attrited customers, and demographic variables showed higher significance among attrited
+                    customers.
+                </p>
+                <div class="flex justify-center mt-8">
+                    <img src="assets/images/attrited_customer.JPG" alt="Attrited Customers"
+                        class="w-full max-w-md h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-purple-900 text-white">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
+</body>
+
+</html>

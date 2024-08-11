@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="font-sans leading-normal tracking-normal">
+    <div class="relative">
+        <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="flex flex-col items-center justify-center bg-purple-50 pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl justify-center font-bold mb-8">Weather Dashboard</h1>
+            <div class="flex justify-center">
+                <img src="assets/images/weatherapi.JPG" alt="WeatherAPI" class=" shadow-lg"
+                    style="width: 300px; height: 300px;">
+            </div>
+            <div
+                class="mt-8 text-xl  justify-center leading-relaxed max-w-prose text-center mx-auto bg-white p-8 rounded shadow-lg">
+                <p>
+
+                    The Weather Dashboard is a web application that enables users to search for a city and view its
+                    current and future weather conditions using the OpenWeatherMap API. Users must replace
+                    "YOUR_API_KEY" with their actual API key in the script.js file. The app dynamically updates the HTML
+                    and CSS to display weather information and stores search history in localStorage, allowing easy
+                    access to previously searched cities. This tool is ideal for travelers who want to see the weather
+                    outlook for multiple cities to plan trips accordingly. The dashboard provides form inputs where,
+                    upon searching for a city, users are shown the current and future weather conditions for that city,
+                    which is also added to the search history. The current weather display includes the city name, date,
+                    weather condition icon, temperature, humidity, and wind speed. For future weather conditions, a
+                    5-day forecast shows the date, weather icon, temperature, wind speed, and humidity. Clicking a city
+                    in the search history retrieves its current and future weather conditions again.
+                    Technologies used in the project include HTML, CSS, JavaScript, and the OpenWeatherMap API.
+                    <br><br>
+                    <a href="https://tinaika19.github.io/Weather-Dashboard/"
+                        class="inline-block bg-purple-600 text-white py-2 px-6 rounded-lg shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">Click
+                        here to try out the Application</a>
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer class="text-center py-4 bg-purple-900 text-white mt-8">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinaika Pereira</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+      
+        .hero-bg {
+            background-image: url('assets/images/design2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50 shadow-md">
+        <div class="container mx-auto flex flex-col items-center justify-center text-center">
+            <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+            <nav>
+                <ul class="flex space-x-8">
+
+                    <li><a href="about.html" class="hover:text-purple-700">About</a></li>
+                    <li><a href="projects.html" class="hover:text-purple-700">Projects</a></li>
+
+                    <li><a href="contact.html" class="hover:text-purple-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center justify-center pt-16">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl font-bold mb-4">Hi,<br> I’m <span class="text-purple-700">Tinaika</span><br> Data
+                    Analyst & Full-Stack Developer</h1>
+                <button class="bg-purple-700 text-white py-2 px-4 rounded mt-4"
+                    onclick="window.location.href='about.html';">About me</button>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
+                <img src="assets/images/profile.jpeg" alt="Tinaika Pereira" class="rounded-full shadow-lg"
+                    style="width: 300px; height: 300px;">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Social Links -->
+    <section id="contact-me" class="py-16 bg-purple-60">
+        <h3 class="text-center text-3xl font-bold mb-8">You can also follow me on</h3>
+        <div class="flex justify-center space-x-8">
+            <a href="https://github.com/" target="_blank">
+                <img src="assets/images/github.JPG"
+                    class="interactive-image w-10 h-10 hover:scale-110 transition-transform">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="assets/images/linkedln.JPG"
+                    class="interactive-image w-10 h-10 hover:scale-110 transition-transform">
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-purple-900 text-white">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
+</body>
+
+</html>
