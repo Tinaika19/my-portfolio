@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediting the quality of wine</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body class="font-sans leading-normal tracking-normal">
+    <div class="relative">
+        <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    </header>
+
+    <section class="flex flex-col items-center justify-center bg-purple-50 pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-2xl md:text-3xl font-bold mb-8">Predicting the quality of wine</h1>
+            <div class="flex justify-center">
+                <img src="assets/images/wine.JPG" alt="wine" class="shadow-lg"
+                    style="width: 100%; max-width: 300px; height: auto;">
+            </div>
+            <div
+                class="mt-8 text-lg md:text-xl leading-relaxed max-w-prose text-center mx-auto bg-white p-8 rounded shadow-lg">
+                <p>
+                    In this project, I conducted an in-depth analysis and prediction of wine quality using a dataset of various chemical properties of wine samples. 
+                    Here’s an overview of the steps and methods applied to achieve robust model performance:
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-purple-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Application Development</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+
+
+
+                <div class="bg-white rounded shadow-lg flex flex-col items-center p-4">
+                    <img src="assets/images/tech integration.png" alt="tech integration" class="icon mb-4">
+                    <h3 class="text-xl font-semibold">Data Pre processing</h3>
+                    <p   class="text-left w-full">
+
+
+                        <span class="highlight">Missing Value Treatment:</span>  Addressed missing values in the "density" and "chloride" features by imputing the mean values for these attributes.
+                        <br><br>
+                        <span class="highlight">Categorical Conversion:</span>Built a function to convert categorical columns to numerical values, facilitating machine learning model compatibility.
+                        <br><br>
+
+                     
+
+
+                    </p>
+                </div>
+                <div class="bg-white rounded shadow-lg flex flex-col items-center p-4">
+                    <img src="assets/images/data collection.png" alt="data collection" class="icon mb-4">
+                    <h3 class="text-xl font-semibold">Model Training and Validation</h3>
+                    <p>
+
+                        <span class="highlight">Train-Test Split:</span> Split the dataset into 80% training and 20% testing sets.
+                        <br><br>
+                        <span class="highlight">Cross-Validation:</span>Applied 10-fold cross-validation on a Decision Tree Classifier, yielding a reliable estimate of model performance across different subsets.
+                        <br><br>
+
+                        <span class="highlight">Confusion Matrix Analysis:</span>Evaluated model performance by examining true positives, false negatives, true negatives, and false positives across the 10 folds.
+                        sessions.
+                        <br><br>
+                       
+                    </p>
+
+
+
+                </div>
+
+
+                <div class="bg-white rounded shadow-lg flex flex-col items-center p-4">
+                    <img src="assets/images/prototype.png" alt="PM" class="icon mb-4">
+                    <h3 class="text-xl font-semibold">Performance Metrics</h3>
+                    <p>
+                        <span class="highlight">Accuracy:</span> Achieved an average accuracy of 83.52% across folds, with the refined model (after removing "density") achieving 83.98% accuracy, indicating consistent performance.
+                        favorite cocktails.
+                        <br><br>
+                        <span class="highlight">ROC AUC</span>Attained an Area Under the Curve (AUC) of 0.7595 with the original model, which improved to 0.7786 after removing the "density" feature, demonstrating moderate discrimination between wine quality classes.
+                        <br><br>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-purple-50 py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Outcome and Insights</h2>
+            <div class="bg-white p-8 rounded shadow-lg text-center">
+                <p class="text-xl leading-relaxed">
+                    Removing the "density" feature led to a slight improvement in model accuracy and a stable AUC score, enhancing the model's ability to accurately classify wine quality. This project highlights the importance of feature selection and cross-validation in building effective machine learning models. </p>
+
+                <
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-purple-900 text-white">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
+</body>
+
+</html>

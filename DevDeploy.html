@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDeploy</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            background-image: url('assets/images/purple.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .section-bg {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .image-grid>div {
+            flex: 1 0 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            box-sizing: border-box;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="font-sans leading-normal tracking-normal">
+    <div class="relative">
+        <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="flex flex-col items-center justify-center bg-purple-50 pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl justify-center font-bold mb-8">DevDeploy</h1>
+            <div class="flex justify-center">
+                <img src="assets/images/Dev.JPG" alt="Task Tracking Board" class=" shadow-lg"
+                    style="width: 300px; height: 300px;">
+            </div>
+            <div class="mt-8 text-xl leading-relaxed max-w-prose text-center mx-auto bg-white p-8 rounded shadow-lg">
+                <p>
+                    DevDeploy is a full stack application that is designed to empower junior developers by connecting them with other junior developers, short-term, project-based work from real businesses. 
+
+                    It’s a dedicated space where new developers can build their portfolios, gain hands-on experience, and showcase their skills on meaningful projects. 
+                    
+                    For businesses, DevDeploy! offers a streamlined way to find fresh, motivated talent ready to contribute. 
+                    <br>
+                    Some of the technologies used in this application are the MERN stack, JWT, GraphQL, REACT, Tailwind CSS. Apollo Server.
+                    <br>
+                    <a href="https://dev-deploy-1.onrender.com/"
+                        class="inline-block bg-purple-600 text-white py-2 px-6 rounded-lg shadow-lg hover:bg-purple-700 hover:shadow-xl transition duration-300">Click
+                        here to try out the Application</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center py-4 bg-purple-900 text-white">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
