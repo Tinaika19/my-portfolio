@@ -6,3 +6,4 @@ Welcome to my personal portfolio, showcasing various projects that I have worked
 
 
 ## Link to the website
+https://tinaika19.github.io/my-portfolio/
