@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            background-image: url('assets/images/purple.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-bg {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .image-grid > div {
+            flex: 1 0 calc(100% - 20px); 
+            max-width: calc(100% - 20px);
+        }
+        @media (min-width: 640px) { 
+            .image-grid > div {
+                flex: 1 0 calc(50% - 20px); 
+                max-width: calc(50% - 20px);
+            }
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 5px solid white; /* Add this line for the white border */
+        }
+        
+    </style>
+</head>
+<body class="font-sans leading-normal tracking-normal">
+    <div class="relative">
+        <header class="bg-purple-900 text-white py-4 fixed top-0 w-full z-50">
+            <div class="container mx-auto flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl font-bold mb-2">TINAIKA PEREIRA</h1>
+                <nav>
+                    <ul class="flex space-x-8">
+                        <li><a href="index.html" class="hover:text-purple-700">Home</a></li>
+                        <li><a href="about.html" class="hover:text-gray-300">About Me</a></li>
+                        <li><a href="projects.html" class="hover:text-gray-300">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-gray-300">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section class="flex flex-col items-center justify-center bg-purple-50 pt-32 pb-16 min-h-screen">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-3xl font-bold mb-8">Digital Marketing in Real Estate: Increasing online traffic</h1>
+            <div class="flex justify-center">
+                <img src="assets/images/marketing.JPG" alt="Tinaika Pereira" class="rounded-full shadow-lg w-48 h-48 md:w-64 md:h-64">
+            </div>
+            <div class="mt-8 text-lg md:text-xl leading-relaxed max-w-prose text-center mx-auto bg-white p-8 rounded shadow-lg">
+                <p>
+                    In this project, a real estate company was struggling to generate leads and increase its online presence. Their website had very low traffic, with only a few active users visiting. They weren’t getting enough visibility or attracting potential customers. <p>
+                    <span class="highlight font-semibold">Solution:</span>
+                    I used analytics tools like Google Analytics and Google Search Console to understand and improve the website’s performance. This included conducting keyword research to identify terms potential buyers were searching for. I then optimized the website content by adding relevant keywords and highlighting key features that customers look for. I also focused on enhancing the user experience by making the website easier to navigate and more visually engaging. Additionally, I used crawling and indexing strategies to improve the site’s visibility in search engines
+                     </p>
+                <p>
+                    <span class="highlight font-semibold">Outcome:</span>
+                    Within a month, website traffic increased significantly with organic search, and the company began receiving more sales inquiries. </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-bg py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Visualisations</h2>
+            <div class="bg-white p-8 rounded shadow-lg text-center">
+                <p class="text-lg md:text-xl leading-relaxed">
+                   Below, we can see the comparison between the visualisation from the Google Analytics dashboard, before and after using SEO techniques to increase online presence.</p>
+               
+                <div class="image-grid mt-8">
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Evaluation before using SEO (Jan -Feb)</h3>
+                        <img src="assets/images/before.JPG" alt="Evaluation for Accommodation Building">
+                    </div>
+                    <div>
+                        <h3 class="text-lg md:text-xl font-semibold mb-4">Evaluation after using SEO (Mar - April)</h3>
+                        <img src="assets/images/after.JPG" alt="Evaluation for Building Type">
+                    </div>
+                   
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+    
+    
+
+    <footer class="text-center py-4 bg-purple-900 text-white">
+        <p>&copy; 2024 Tinaika Pereira</p>
+    </footer>
+</body>
+</html>
